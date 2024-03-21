@@ -75,7 +75,7 @@ const Landing = ({ height }: {height: number}) => {
               {/* <div className='w-[30%] rounded-full'>
                 <img className='w-full rounded-full border-2 border-slate-300 object-cover object-center' src="https://scontent.fceb2-1.fna.fbcdn.net/v/t39.30808-6/427766089_2502459919923974_6068503201814358464_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zmrMgH_x63wAX_dFqp3&_nc_ht=scontent.fceb2-1.fna&oh=00_AfA2FLIczfYeDdUfMi_oVRQw3sm_kC3bO-n5EZKrIc7Log&oe=6600529C" alt="profile picture" />
               </div> */}
-              <div className='w-[70%] mt-3 text-sm'>
+              <div className='md:w-[70%] w-[80%] mt-3 text-sm'>
                 <h2 className='text-lg font-black uppercase tracking-wide'>Hi! I'm Mark</h2>
                 <h1 className='text-3xl font-black mb-1 text-orange-500'>I am a Software Developer</h1>
                 <p className='font-medium'>I'm passoniate in both web and mobile development</p>
@@ -83,7 +83,7 @@ const Landing = ({ height }: {height: number}) => {
                 <p className='go-missing'>&#128512;</p>{`Mark is typing...`.split(" ").map(w => <p className='typing' key={w}>{w}</p>)}
                 </div>
                 <div className='skills hidden mt-2'>
-                    <div className='md:w-[40%] w-1/2 grid grid-cols-4 gap-1.5'>
+                    <div className='md:w-[40%] w-[55%] grid grid-cols-4 gap-1.5'>
                       {skills.map(skill => {
                         return <div key={skill.name} className="text-xs font-medium cursor-pointer ">
                           <div className='rounded-full p-2.5 bg-main border border-main hover:bg-gradient-to-tr from-orange-500 to-main transition-all duration-200'>

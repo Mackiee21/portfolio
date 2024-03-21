@@ -45,7 +45,7 @@ img{
     ul{
         @apply flex flex-col gap-2;
         li{
-            @apply cursor-pointer hover:bg-slate-200 transition-all py-1.5 ps-5 px-14 rounded text-sm font-medium tracking-wide;
+            @apply cursor-pointer hover:bg-slate-200 transition-all p-2 rounded text-sm font-medium tracking-wide;
         }
     }
 }
