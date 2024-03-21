@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: 'smooth';
+}
+
+body{
+    font-family: "Arial", 'sans-serif'
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+/* .hero{
+    background-image: url("assets/final.png");
+    background-repeat: 'no-repeat';
+} */
+
+.hero{
+    background-image: url("assets/vector.jpg");
+    @apply bg-no-repeat bg-center bg-cover;
+}
+.hero video{
+    @apply bg-gradient-to-r from-white to-main;
+}
+.upper-right{
+    @apply absolute -top-[15rem] bg-cover bg-center bg-no-repeat rotate-180;
+}
+
+/*MOBILE DESIGN FOR CUSTOM COMPONENT GOES HERE*/
+.slide{
+    transform: translateX(0);
+}
+.mobile-nav{
+    @apply z-[1000] p-4 text-main;
+    ul{
+        @apply flex flex-col gap-2;
+        li{
+            @apply cursor-pointer hover:bg-slate-200 transition-all py-1.5 ps-5 px-14 rounded text-sm font-medium tracking-wide;
+        }
+    }
+}
