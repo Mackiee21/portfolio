@@ -4,12 +4,23 @@ import { myProfile } from '../utils/index'
 
 const Header = forwardRef<HTMLDivElement>((_, ref) => {
   const mobileNavRef = useRef<HTMLDivElement | null>(null)
+
+  function inaMo(e: MouseEvent){
+      if(!mobileNavRef.current?.contains(e.target as Node)){
+        mobileNavRef.current?.classList.remove("slide")
+        window.removeEventListener("click", inaMo)
+      }
+  }
+
+
   const handleControlNav = () => {
     if(mobileNavRef.current){
        if(mobileNavRef.current.classList.contains("slide")){
           mobileNavRef.current.classList.remove("slide")
+          window.removeEventListener("click", inaMo)
        }else{
           mobileNavRef.current.classList.add("slide")
+          setTimeout(() => {window.addEventListener('click', inaMo)}, 100)
        }
     }
   }
