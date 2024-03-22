@@ -47,7 +47,7 @@ const Header = forwardRef<HTMLDivElement>((_, ref) => {
       </button>
 
       {/**for mobile nav */}
-      <nav ref={mobileNavRef} className='md:hidden mobile-nav overflow-y-auto fixed right-0 translate-x-full transition-all duration-200 bg-slate-50 top-0 bottom-0'>
+      <nav ref={mobileNavRef} className='md:hidden mobile-nav overflow-y-auto fixed right-0 translate-x-full transition-all duration-200 ease-in bg-slate-50 top-0 bottom-0'>
         <div className='flex items-center border-b-[1.5px] pb-2'>
           <img className='w-9 aspect-square object-cover object-center rounded-full border-2 border-slate-400' src={myProfile} alt='picture' />
           <div className='flex-1 ms-2'>
