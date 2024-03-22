@@ -66,11 +66,11 @@ const Landing = ({ height }: {height: number}) => {
   }, [])
 
   return (
-    <section style={{maxHeight: `${height}px`}} className="hero h-dvh">
+    <section style={{maxHeight: `${height}px`}} className="hero min-h-dvh">
       <h3 className="z-[9] text-sm font-medium heading absolute opacity-0 -translate-y-1 left-1/2 -translate-x-1/2 bg-orange-100 py-2.5 px-8 rounded-sm" >Updating content{"...".split("").map(d => {
             return <span className='dot opacity-100'>{d}</span>
           })}</h3>  
-          <div className='h-full grid md:grid-cols-2 grid-cols-1'>
+          <div className='h-full grid md:grid-cols-2 grid-cols-1 portrait:grid-cols-1'>
            <section id="left-landing" className='flex flex-col items-center justify-center'>
               {/* <div className='w-[30%] rounded-full'>
                 <img className='w-full rounded-full border-2 border-slate-300 object-cover object-center' src="https://scontent.fceb2-1.fna.fbcdn.net/v/t39.30808-6/427766089_2502459919923974_6068503201814358464_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zmrMgH_x63wAX_dFqp3&_nc_ht=scontent.fceb2-1.fna&oh=00_AfA2FLIczfYeDdUfMi_oVRQw3sm_kC3bO-n5EZKrIc7Log&oe=6600529C" alt="profile picture" />

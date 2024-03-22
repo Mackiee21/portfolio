@@ -26,7 +26,7 @@ const Header = forwardRef<HTMLDivElement>((_, ref) => {
   }
 
   return (
-    <header ref={ref} className="z-[999] flex items-center justify-between md:py-3 py-4 md:px-14 px-4 bg-sky-900 text-white font-normal text-sm">
+    <header ref={ref} className="z-[999] flex items-center justify-between md:py-3 py-3.5 md:px-14 px-4 bg-sky-900 text-white font-normal text-sm">
       <div>
         <div>
           <h1 className='md:text-xl text-base font-black md:leading-5 leading-4'>Mackiee&#128568;</h1>
@@ -43,16 +43,16 @@ const Header = forwardRef<HTMLDivElement>((_, ref) => {
         </ul>
       </nav>
       <button onClick={handleControlNav} className='md:hidden block'>
-        <MenuIcon size={25}  />
+        <MenuIcon size={30}  />
       </button>
 
       {/**for mobile nav */}
       <nav ref={mobileNavRef} className='md:hidden mobile-nav overflow-y-auto fixed right-0 translate-x-full transition-all duration-200 bg-slate-50 top-0 bottom-0'>
-        <div className='flex items-center me-5'>
+        <div className='flex items-center border-b-[1.5px] pb-2'>
           <img className='w-9 aspect-square object-cover object-center rounded-full border-2 border-slate-400' src={myProfile} alt='picture' />
           <div className='flex-1 ms-2'>
             <h1 className='leading-5 text-base tracking-wide font-semibold text-sky-800'>Mackiee</h1>
-            <a className='text-sm text-gray-600'>@mackiee.github.com</a>
+            <a className='text-sm text-gray-600 pe-6'>@mackiee.github.com</a>
           </div>
         </div>
         <div onClick={handleControlNav} className='mt-4 py-2.5 px-5 cursor-pointer rounded-lg bg-sky-900 flex items-center'>
